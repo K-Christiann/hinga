@@ -138,15 +138,3 @@ Three examples of those boundaries in practice:
 This is the frontend source and a visual case study. It includes components, styles, browser-side request interfaces, images, and the build configuration needed to inspect the client. Those interfaces describe what the UI needs; they are not SQL table definitions.
 
 Database schemas and migrations, server functions, gateway implementation, deployment environment values, operator documents, backups, and member data are maintained separately. No populated environment file, API key, account session, or screenshot-capture harness is included here. The connected application requires its separately maintained backend and configuration.
-
-## The next chapter
-
-Hinga is in active development. The next work includes completing production verification, refining longer settings flows, measuring real usage, and exploring a future mobile experience. The work shown here is the current web frontend, not a promise of production availability or continuous crisis monitoring.
-
-Private writing stays distinct from community posts. An alias does not guarantee complete anonymity from platform operators, and Hinga is not an emergency service.
-
----
-
-**A project by Kyle Christian P. Belono.**
-
-Landing photography: [Jesse Wilkens / Unsplash](https://unsplash.com/photos/park-path-with-trees-green-grass-and-a-bench-m0fhpFfhHBw). The gallery uses fictional content. Fonts and dependencies retain their respective licenses.
