@@ -1,0 +1,40 @@
+.member-activity{max-width:1040px;margin:0 auto}
+.activity-intro{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:28px;padding:22px 25px;background:#eff2e9;border:1px solid #dbe2d5;border-radius:18px}
+.activity-intro p{max-width:650px;margin:0;font-size:14px;line-height:1.75;color:#4c5949}
+.activity-intro a:not(.button){text-decoration:underline;text-underline-offset:3px}
+.activity-intro .button{flex-shrink:0}
+.activity-tabs{margin-bottom:26px}
+.activity-list-toolbar,.case-list-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:20px 0}
+.activity-list-toolbar h2{font-size:20px;margin:0}
+.activity-list{padding:0;margin:0;display:grid;gap:18px;list-style:none}
+.activity-card{padding:26px;min-width:0}
+.activity-card h2{font-size:21px;margin:18px 0 16px}
+.activity-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.activity-meta time{font-size:12px;color:#677361}
+.activity-status{display:inline-flex;align-items:center;gap:5px;border:1px solid #d9e1d2;border-radius:30px;padding:5px 11px;background:#edf1e8;color:#41543d;font-size:12px;font-weight:600;white-space:nowrap}
+.activity-pending,.activity-open,.activity-in_review{background:#f4eedf;border-color:#e8dfc9;color:#725e36}
+.activity-removed{background:#f4eae7;border-color:#e5d4ce;color:#83594d}
+.activity-content{padding:14px 17px;border:1px solid #e0e4da;border-radius:12px;margin:14px 0}
+.activity-content summary{cursor:pointer;font-weight:500;font-size:14px}
+.activity-content p,.activity-explanation p,.case-history p{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;font-size:14px;margin:10px 0 0}
+.activity-explanation{background:#f3f4ee;border-left:3px solid #b6c4a7;padding:15px 18px;margin:15px 0;border-radius:0 10px 10px 0;overflow-wrap:anywhere}
+.activity-explanation strong{font-size:13px;font-weight:600;color:#526149}
+.activity-resolution{display:flex;align-items:center;gap:8px;font-size:13px;color:#526149;margin:18px 0}
+.activity-card>.button{margin-top:10px}
+.case-list-toolbar .review-kind-tabs{margin:0;flex-wrap:wrap}
+.case-decision-form{margin-top:22px;display:grid;gap:10px}
+.case-decision-form .field-label{margin:10px 0 0}
+.case-decision-form .button{justify-self:start;margin-top:5px}
+.case-detail h3{margin:22px 0 8px;font-size:19px}
+.case-history{margin-top:25px;border-top:1px solid #e0e4da;padding-top:18px}
+.case-history summary{font-size:14px;font-weight:600;cursor:pointer}
+.case-history ol{list-style:none;padding:0;margin:15px 0;display:grid;gap:18px}
+.case-history li{border-left:2px solid #c5d0b9;padding-left:15px;overflow-wrap:anywhere}
+.case-history strong{font-size:13px}.case-history small{display:block;margin-top:5px;color:#677361;font-size:12px}
+.sharing-review-notice{padding:14px 18px;background:#eef2e8;border:1px solid #dbe3d2;border-radius:13px;margin:0 0 20px;display:flex;gap:12px;align-items:flex-start}
+.sharing-review-notice svg{flex-shrink:0;margin-top:2px}.sharing-review-notice p{margin:0;font-size:13px;line-height:1.75}.sharing-review-notice strong{display:block}
+.sharing-review-notice a{text-decoration:underline;text-underline-offset:3px}
+.reply-report-button{display:inline-flex;align-items:center;gap:5px;background:none;border:0;padding:5px 0;font-size:12px;color:#526149;margin-top:6px;cursor:pointer}
+.reply-report-button:hover{text-decoration:underline}.reply-report-button:focus-visible{outline:2px solid #7b9368;outline-offset:3px}
+@media(max-width:700px){.activity-intro{flex-direction:column;align-items:flex-start;padding:19px;gap:16px}.activity-card{padding:20px}.activity-list-toolbar{align-items:flex-start}.activity-list-toolbar h2{font-size:18px}.activity-tabs{display:flex;flex-wrap:wrap;width:100%}.activity-tabs button{flex:1;justify-content:center}.case-list-toolbar{align-items:flex-start;flex-wrap:wrap}.case-decision-form .button{width:100%;justify-content:center}.activity-meta{gap:9px}.activity-meta time{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.member-activity *,.case-detail *{scroll-behavior:auto}}

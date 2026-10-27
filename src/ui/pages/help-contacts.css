@@ -1,0 +1,52 @@
+.help-page .emergency-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 25px 30px;
+  margin-bottom: 20px;
+  border: 1px solid #dcd8c8;
+  border-left: 3px solid #8c7953;
+  border-radius: 12px;
+  background: #f0ede3;
+  color: #454b3b;
+}
+.emergency-contact-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #695b3e;
+}
+.help-page .emergency-contact h3 {
+  font:
+    26px/1.3 Georgia,
+    serif;
+  margin: 10px 0;
+}
+.help-page .emergency-contact p {
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 610px;
+}
+.help-page .emergency-contact .text-link {
+  margin-top: 9px;
+  font-size: 12px;
+}
+.help-page .emergency-contact > .button {
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  .help-page .emergency-contact {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 23px 22px;
+    gap: 18px;
+  }
+  .help-page .emergency-contact h3 {
+    font-size: 25px;
+  }
+  .help-page .emergency-contact > .button {
+    align-self: flex-start;
+  }
+}

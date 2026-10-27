@@ -1,0 +1,17 @@
+.thought-card.rotating-thought-card { display: flex; flex-direction: column; justify-content: flex-start; min-width: 0; padding-bottom: 20px; }
+.rotating-thought-card .eyebrow { margin: 0; line-height: 1.5; font-weight: 600; }
+.rotating-thought-card .quote-mark { flex-shrink: 0; }
+.rotating-thought-card .thought-message { font-family: var(--serif); font-size: clamp(21px, 1.8vw, 25px); line-height: 1.45; letter-spacing: -.2px; color: #5f573e; margin: 0; max-width: none; overflow-wrap: anywhere; }
+.rotating-thought-card .thought-scripture { margin: 20px 0 0; padding-top: 18px; border-top: 1px solid #d9cdbb; }
+.thought-verse-label { display: flex; align-items: center; gap: 7px; color: #665c45; font-size: 12px; font-weight: 600; line-height: 1.5; }
+.thought-scripture blockquote { margin: 10px 0 12px; padding: 0; }
+.rotating-thought-card .thought-scripture blockquote p { max-width: none; margin: 0; font-family: var(--serif); font-size: 18px; line-height: 1.55; color: #554e3e; overflow-wrap: anywhere; }
+.thought-scripture figcaption { display: flex; flex-direction: column; gap: 3px; font-size: 12px; line-height: 1.5; color: #6f634f; }
+.thought-scripture figcaption a { width: fit-content; color: #584d37; text-decoration: underline; text-underline-offset: 3px; }
+.thought-actions { display: flex; flex-direction: column; gap: 14px; margin-top: 22px; }
+.thought-next { display: flex; justify-content: center; align-items: center; gap: 7px; width: 100%; min-height: 42px; padding: 9px 12px; border: 1px solid #c4b59a; border-radius: 8px; background: #f9f5ee; color: #4e4735; font-size: 13px; font-weight: 600; cursor: pointer; }
+.thought-next:hover { background: #fffaf2; border-color: #9d8a69; }
+.thought-verse-choice { display: flex; align-items: center; gap: 9px; min-height: 30px; color: #5f563f; font-size: 12px; line-height: 1.5; cursor: pointer; }
+.thought-verse-choice input { width: 16px; height: 16px; flex-shrink: 0; accent-color: #6f7653; }
+.thought-next:focus-visible, .thought-verse-choice input:focus-visible, .thought-scripture a:focus-visible { outline: 2px solid #4e5b3b; outline-offset: 4px; }
+@media (max-width: 600px) { .rotating-thought-card .thought-message { font-size: 25px; } .thought-next { min-height: 44px; font-size: 14px; } .thought-verse-choice { font-size: 13px; min-height: 36px; } }

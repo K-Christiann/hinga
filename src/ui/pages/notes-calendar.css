@@ -1,0 +1,9 @@
+.note-date-field { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; border-top: 1px solid var(--border); padding-block: 14px; color: #69795e; font-size: 11px; }
+.note-date-field input { border: 1px solid #dce2d2; border-radius: 6px; padding: 7px; background: #f8f9f2; color: #43573b; min-height: 36px; max-width: 100%; }
+.note-date-field span { font-size: 10px; }
+.note-calendar-back { display: inline-flex; gap: 5px; align-items: center; font-size: 11px; margin-bottom: 20px; color: #526b43; min-height: 30px; }
+.note-link-error { font-size: 12px; margin-bottom: 15px; color: #895f4e; }
+@media (max-width: 620px) {
+  .note-date-field { gap: 7px; }
+  .note-date-field input { font-size: 16px; }
+}

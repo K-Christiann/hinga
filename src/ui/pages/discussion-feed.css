@@ -1,0 +1,38 @@
+.community-feed-column { min-width: 0; }
+.feed-start { scroll-margin-top: 100px; }
+.feed-composer-card { display: flex; align-items: center; gap: 12px; border: 1px solid var(--border); padding: 17px; border-radius: 14px; background: #fffefa; margin-bottom: 21px; }
+.feed-composer-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #e8eedf; color: #7a9067; flex-shrink: 0; }
+.feed-composer-card > button:not(.feed-compose-icon) { flex: 1; min-width: 0; min-height: 43px; text-align: left; padding: 10px 15px; background: #f3f5ee; border: 1px solid #e7ebdf; border-radius: 24px; color: #718167; font-size: 13px; }
+.feed-compose-icon { display: grid; place-items: center; width: 38px; height: 42px; color: #5d7750; }
+.feed-preferences { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin: 15px 0; color: #738167; font-size: 11px; }
+.feed-preferences > div { display: flex; align-items: center; gap: 14px; }
+.feed-preferences label, .feed-preferences button { display: flex; align-items: center; gap: 6px; min-height: 32px; }
+.feed-preferences input { accent-color: #627b52; width: 14px; height: 14px; }
+.feed-preferences button { color: #506a44; }
+.community-feed-column .thought-feed { gap: 17px; }
+.community-feed-column .thought-post { border-radius: 15px; }
+.community-feed-column .post-body { line-height: 1.85; overflow-wrap: anywhere; white-space: pre-wrap; }
+.post-expand { display: block; color: #4f6c41; font-size: 12px; font-weight: 600; padding: 0; min-height: 34px; margin-top: -5px; margin-bottom: 9px; }
+.feed-continuation { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 26px 18px 16px; text-align: center; }
+.feed-load-status { display: flex; align-items: center; justify-content: center; gap: 8px; color: #77856b; font-size: 12px; min-height: 24px; }
+.feed-continuation .button { font-size: 12px; min-height: 40px; }
+.feed-back-top { display: inline-flex; align-items: center; gap: 5px; min-height: 36px; font-size: 11px; color: #607553; }
+.feed-initial-loading { display: grid; justify-items: center; gap: 14px; padding: 50px 20px; border: 1px solid var(--border); background: #fffefa; border-radius: 14px; color: #80916e; text-align: center; }
+.feed-initial-loading p { font-size: 13px; }
+.feed-loading-icon { animation: feed-turn 1.5s linear infinite; }
+.reply-order { color: var(--muted); font-size: 11px; margin: 0 0 15px; }
+.reply-page-controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding-block: 16px; border-bottom: 1px solid var(--border); margin-bottom: 18px; }
+.reply-page-controls .button { min-height: 37px; font-size: 12px; }
+.reply-page-controls > span { font-size: 11px; color: var(--muted); }
+@keyframes feed-turn { to { transform: rotate(360deg); } }
+@media (max-width: 620px) {
+  .feed-composer-card { padding: 13px; gap: 8px; }
+  .feed-composer-mark { width: 34px; height: 34px; }
+  .feed-composer-card > button:not(.feed-compose-icon) { font-size: 12px; padding: 9px 12px; }
+  .feed-compose-icon { display: none; }
+  .feed-preferences { align-items: flex-start; gap: 6px; flex-direction: column; font-size: 12px; }
+  .feed-preferences > div { width: 100%; justify-content: space-between; }
+  .feed-continuation { padding-inline: 7px; }
+  .feed-load-status { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .feed-loading-icon { animation: none; } }

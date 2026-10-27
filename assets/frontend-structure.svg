@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">How the Hinga frontend is organized</title>
+  <desc id="desc">A composition root connects domain contracts, application services, infrastructure adapters, and React pages. Backend implementation stays outside the public repository.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0l10 5-10 5Z" fill="#879779"/></marker></defs>
+  <rect width="1280" height="640" rx="20" fill="#f2f3ea"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#303d32">
+    <text x="48" y="48" font-size="14" letter-spacing="2" font-weight="700">INSIDE THE FRONTEND</text>
+    <text x="48" y="99" font-family="Georgia,serif" font-size="35">One experience. Clear responsibilities.</text>
+    <text x="48" y="134" font-size="17" fill="#697164">The composition root connects services and adapters before React renders the app.</text>
+    <g fill="none" stroke="#879779" stroke-width="2" marker-end="url(#arrow)">
+      <path d="M409 252h34"/><path d="M826 252h34"/><path d="M822 464h238V343"/><path d="M409 464h35"/><path d="M228 390v-44"/>
+    </g>
+    <rect x="48" y="179" width="360" height="160" rx="14" fill="#fffefa" stroke="#dce0d1"/>
+    <rect x="460" y="179" width="360" height="160" rx="14" fill="#fffefa" stroke="#dce0d1"/>
+    <rect x="872" y="179" width="360" height="160" rx="14" fill="#fffefa" stroke="#dce0d1"/>
+    <g font-size="14" font-weight="700" fill="#50634c"><text x="72" y="211">PRESENTATION</text><text x="484" y="211">USE CASES</text><text x="896" y="211">BOUNDARIES</text></g>
+    <g font-family="Georgia,serif" font-size="29"><text x="72" y="253">React UI</text><text x="484" y="253">Application services</text><text x="896" y="253">Domain ports</text></g>
+    <g font-size="17" fill="#697164"><text x="72" y="289">Pages, components, and view state</text><text x="72" y="316">src/ui/</text><text x="484" y="289">Saving, drafts, and feed coordination</text><text x="484" y="316">src/application/</text><text x="896" y="289">Models and narrow interfaces</text><text x="896" y="316">src/domain/</text></g>
+    <rect x="48" y="391" width="360" height="150" rx="14" fill="#fffefa" stroke="#dce0d1"/>
+    <text x="72" y="425" font-size="14" font-weight="700" fill="#50634c">WIRING</text>
+    <text x="72" y="466" font-family="Georgia,serif" font-size="29">Composition root</text>
+    <text x="72" y="500" font-size="17" fill="#697164">Connects the UI and implementations</text>
+    <text x="72" y="525" font-size="17" fill="#697164">src/bootstrap.ts · src/main.tsx</text>
+    <rect x="460" y="391" width="360" height="150" rx="14" fill="#e3e8d9" stroke="#ccd5be"/>
+    <text x="484" y="425" font-size="14" font-weight="700" fill="#50634c">BROWSER INTEGRATIONS</text>
+    <text x="484" y="466" font-family="Georgia,serif" font-size="27">Infrastructure adapters</text>
+    <text x="484" y="500" font-size="17" fill="#697164">Auth, transport, and memory cache</text>
+    <text x="484" y="525" font-size="17" fill="#697164">src/infrastructure/</text>
+    <text x="1080" y="410" font-size="16" fill="#697164">implements</text>
+    <text x="1080" y="433" font-size="16" fill="#697164">domain ports</text>
+    <text x="48" y="590" font-size="17" fill="#697164">Public: frontend source and presentation assets. Private: database definitions, server code, and operator configuration.</text>
+  </g>
+</svg>

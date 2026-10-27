@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">Hinga's visual language</title>
+  <desc id="desc">Cream, sage, olive, peach and ink from the app's CSS, with serif headings and DM Sans interface text.</desc>
+  <rect width="1280" height="420" rx="20" fill="#f8f7f2"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#303d32">
+    <text x="48" y="51" font-size="14" font-weight="700" letter-spacing="2">A QUIETER VISUAL LANGUAGE</text>
+    <text x="48" y="112" font-family="Georgia,serif" font-size="40">Room to read. Room to breathe.</text>
+    <text x="48" y="152" font-size="18" fill="#697164">Serif headings · DM Sans controls · gentle contrast · space between tasks</text>
+    <g transform="translate(48 199)">
+      <rect width="220" height="112" rx="12" fill="#f8f7f2" stroke="#d4d8ca"/>
+      <rect x="240" width="220" height="112" rx="12" fill="#e8ebdf"/>
+      <rect x="480" width="220" height="112" rx="12" fill="#50634c"/>
+      <rect x="720" width="220" height="112" rx="12" fill="#e8bea3"/>
+      <rect x="960" width="220" height="112" rx="12" fill="#303d32"/>
+      <text x="18" y="43" font-size="21">Cream</text><text x="18" y="79" font-size="16" fill="#697164">#f8f7f2</text>
+      <text x="258" y="43" font-size="21">Sage</text><text x="258" y="79" font-size="16" fill="#697164">#e8ebdf</text>
+      <g fill="#f8f7f2"><text x="498" y="43" font-size="21">Olive</text><text x="498" y="79" font-size="16">#50634c</text></g>
+      <text x="738" y="43" font-size="21">Peach</text><text x="738" y="79" font-size="16">#e8bea3</text>
+      <g fill="#f8f7f2"><text x="978" y="43" font-size="21">Ink</text><text x="978" y="79" font-size="16">#303d32</text></g>
+    </g>
+    <text x="48" y="371" font-size="16" fill="#697164">Visual direction: warm and readable, with clear choices and no pressure to share.</text>
+  </g>
+</svg>
